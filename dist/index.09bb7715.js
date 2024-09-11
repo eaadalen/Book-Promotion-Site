@@ -66013,19 +66013,81 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 const MainView = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _welcomeView.WelcomeView), {}, void 0, false, {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _welcomeView.WelcomeView), {}, void 0, false, {
+                        fileName: "client/src/components/main-view/main-view.jsx",
+                        lineNumber: 9,
+                        columnNumber: 34
+                    }, void 0)
+                }, void 0, false, {
                     fileName: "client/src/components/main-view/main-view.jsx",
                     lineNumber: 9,
-                    columnNumber: 34
-                }, void 0)
-            }, void 0, false, {
-                fileName: "client/src/components/main-view/main-view.jsx",
-                lineNumber: 9,
-                columnNumber: 9
-            }, undefined)
-        }, void 0, false, {
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/book",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(BookView, {}, void 0, false, {
+                        fileName: "client/src/components/main-view/main-view.jsx",
+                        lineNumber: 10,
+                        columnNumber: 38
+                    }, void 0)
+                }, void 0, false, {
+                    fileName: "client/src/components/main-view/main-view.jsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/about",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AboutView, {}, void 0, false, {
+                        fileName: "client/src/components/main-view/main-view.jsx",
+                        lineNumber: 11,
+                        columnNumber: 39
+                    }, void 0)
+                }, void 0, false, {
+                    fileName: "client/src/components/main-view/main-view.jsx",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/spotify",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SpotifyView, {}, void 0, false, {
+                        fileName: "client/src/components/main-view/main-view.jsx",
+                        lineNumber: 12,
+                        columnNumber: 41
+                    }, void 0)
+                }, void 0, false, {
+                    fileName: "client/src/components/main-view/main-view.jsx",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/merch",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MerchView, {}, void 0, false, {
+                        fileName: "client/src/components/main-view/main-view.jsx",
+                        lineNumber: 13,
+                        columnNumber: 39
+                    }, void 0)
+                }, void 0, false, {
+                    fileName: "client/src/components/main-view/main-view.jsx",
+                    lineNumber: 13,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/causes",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CausesView, {}, void 0, false, {
+                        fileName: "client/src/components/main-view/main-view.jsx",
+                        lineNumber: 14,
+                        columnNumber: 40
+                    }, void 0)
+                }, void 0, false, {
+                    fileName: "client/src/components/main-view/main-view.jsx",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
             fileName: "client/src/components/main-view/main-view.jsx",
             lineNumber: 8,
             columnNumber: 7
