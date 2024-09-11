@@ -29,13 +29,13 @@ export const WelcomeView = () => {
                <div className="col-12">
                   <nav className="site-navigation text-right ml-auto" role="navigation">
                      <ul className="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                        <li style={{ margin: '8.5px' }}><a href="#home-section" style={{ color: '#FFFFFF' }}>Book</a></li>
-                        <li style={{ margin: '8.5px' }}><a href="#services-section" className="nav-link">About Me</a></li>
-                        <li style={{ margin: '8.5px' }}><a href="#why-us-section" className="nav-link">YouTube</a></li>
-                        <li style={{ margin: '8.5px' }}><a href="#testimonials-section" className="nav-link">Spotify</a></li>
-                        <li style={{ margin: '8.5px' }}><a href="#blog-section" className="nav-link">Podcast</a></li>
-                        <li style={{ margin: '8.5px' }}><a href="#contact-section" className="nav-link">Merch</a></li>
-                        <li style={{ margin: '8.5px' }}><a href="#contact-section" className="nav-link">Important Causes</a></li>
+                        <li style={{ margin: '8.5px' }}><Link to={`/book`}>Book</Link></li>
+                        <li style={{ margin: '8.5px' }}><Link to={`/about`}>About Me</Link></li>
+                        <li style={{ margin: '8.5px' }}><Link to={`/youtube`}>Youtube</Link></li>   {/* Youtube link to be inserted later */}
+                        <li style={{ margin: '8.5px' }}><Link to={`/spotify`}>Spotify</Link></li>
+                        <li style={{ margin: '8.5px' }}><Link to={`/podcast`}>Podcast</Link></li>   {/* Podcast link to be inserted later */}
+                        <li style={{ margin: '8.5px' }}><Link to={`/merch`}>Merch</Link></li>
+                        <li style={{ margin: '8.5px' }}><Link to={`/causes`}>Important Causes</Link></li>
                         {/* <li className="has-children">
                            <a href="#about-section" className="nav-link">About Us</a>
                            <ul className="dropdown arrow-top">

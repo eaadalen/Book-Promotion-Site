@@ -73238,11 +73238,8 @@ const WelcomeView = ()=>{
                                                 style: {
                                                     margin: "8.5px"
                                                 },
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: "#home-section",
-                                                    style: {
-                                                        color: "#FFFFFF"
-                                                    },
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: `/book`,
                                                     children: "Book"
                                                 }, void 0, false, {
                                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
@@ -73258,9 +73255,8 @@ const WelcomeView = ()=>{
                                                 style: {
                                                     margin: "8.5px"
                                                 },
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: "#services-section",
-                                                    className: "nav-link",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: `/about`,
                                                     children: "About Me"
                                                 }, void 0, false, {
                                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
@@ -73276,10 +73272,9 @@ const WelcomeView = ()=>{
                                                 style: {
                                                     margin: "8.5px"
                                                 },
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: "#why-us-section",
-                                                    className: "nav-link",
-                                                    children: "YouTube"
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: `/youtube`,
+                                                    children: "Youtube"
                                                 }, void 0, false, {
                                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
                                                     lineNumber: 34,
@@ -73290,13 +73285,13 @@ const WelcomeView = ()=>{
                                                 lineNumber: 34,
                                                 columnNumber: 25
                                             }, undefined),
+                                            "   ",
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                 style: {
                                                     margin: "8.5px"
                                                 },
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: "#testimonials-section",
-                                                    className: "nav-link",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: `/spotify`,
                                                     children: "Spotify"
                                                 }, void 0, false, {
                                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
@@ -73312,9 +73307,8 @@ const WelcomeView = ()=>{
                                                 style: {
                                                     margin: "8.5px"
                                                 },
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: "#blog-section",
-                                                    className: "nav-link",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: `/podcast`,
                                                     children: "Podcast"
                                                 }, void 0, false, {
                                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
@@ -73326,13 +73320,13 @@ const WelcomeView = ()=>{
                                                 lineNumber: 36,
                                                 columnNumber: 25
                                             }, undefined),
+                                            "   ",
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                 style: {
                                                     margin: "8.5px"
                                                 },
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: "#contact-section",
-                                                    className: "nav-link",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: `/merch`,
                                                     children: "Merch"
                                                 }, void 0, false, {
                                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
@@ -73348,9 +73342,8 @@ const WelcomeView = ()=>{
                                                 style: {
                                                     margin: "8.5px"
                                                 },
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: "#contact-section",
-                                                    className: "nav-link",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: `/causes`,
                                                     children: "Important Causes"
                                                 }, void 0, false, {
                                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
