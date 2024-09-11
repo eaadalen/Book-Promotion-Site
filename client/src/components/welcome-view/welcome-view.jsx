@@ -24,14 +24,19 @@ export const WelcomeView = () => {
          <div className="container">
             <div className="row align-items-center position-relative">
                <div className="site-logo">
-                  <a href="index.html" className="text-black"><span className="text-primary">Emily DeNure</span></a>
+                  <a href="index.html" className="text-black"><span style={{ color: '#c65363' }}>Emily DeNure</span></a>
                </div>
                <div className="col-12">
-                  <nav className="site-navigation text-right ml-auto " role="navigation">
+                  <nav className="site-navigation text-right ml-auto" role="navigation">
                      <ul className="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                        <li><a href="#home-section" className="nav-link">Home</a></li>
-                        <li><a href="#services-section" className="nav-link">Services</a></li>
-                        <li className="has-children">
+                        <li style={{ margin: '8.5px' }}><a href="#home-section" style={{ color: '#FFFFFF' }}>Book</a></li>
+                        <li style={{ margin: '8.5px' }}><a href="#services-section" className="nav-link">About Me</a></li>
+                        <li style={{ margin: '8.5px' }}><a href="#why-us-section" className="nav-link">YouTube</a></li>
+                        <li style={{ margin: '8.5px' }}><a href="#testimonials-section" className="nav-link">Spotify</a></li>
+                        <li style={{ margin: '8.5px' }}><a href="#blog-section" className="nav-link">Podcast</a></li>
+                        <li style={{ margin: '8.5px' }}><a href="#contact-section" className="nav-link">Merch</a></li>
+                        <li style={{ margin: '8.5px' }}><a href="#contact-section" className="nav-link">Important Causes</a></li>
+                        {/* <li className="has-children">
                            <a href="#about-section" className="nav-link">About Us</a>
                            <ul className="dropdown arrow-top">
                               <li><a href="#team-section" className="nav-link">Team</a></li>
@@ -46,11 +51,7 @@ export const WelcomeView = () => {
                                  </ul>
                               </li>
                            </ul>
-                        </li>
-                        <li><a href="#why-us-section" className="nav-link">Why Us</a></li>
-                        <li><a href="#testimonials-section" className="nav-link">Testimonials</a></li>
-                        <li><a href="#blog-section" className="nav-link">Blog</a></li>
-                        <li><a href="#contact-section" className="nav-link">Contact</a></li>
+                        </li>*/}
                      </ul>
                   </nav>
                </div>

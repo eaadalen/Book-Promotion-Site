@@ -73207,7 +73207,9 @@ const WelcomeView = ()=>{
                                     href: "index.html",
                                     className: "text-black",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "text-primary",
+                                        style: {
+                                            color: "#c65363"
+                                        },
                                         children: "Emily DeNure"
                                     }, void 0, false, {
                                         fileName: "client/src/components/welcome-view/welcome-view.jsx",
@@ -73227,20 +73229,25 @@ const WelcomeView = ()=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "col-12",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-                                    className: "site-navigation text-right ml-auto ",
+                                    className: "site-navigation text-right ml-auto",
                                     role: "navigation",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                                         className: "site-menu main-menu js-clone-nav ml-auto d-none d-lg-block",
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                style: {
+                                                    margin: "8.5px"
+                                                },
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                                     href: "#home-section",
-                                                    className: "nav-link",
-                                                    children: "Home"
+                                                    style: {
+                                                        color: "#FFFFFF"
+                                                    },
+                                                    children: "Book"
                                                 }, void 0, false, {
                                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
                                                     lineNumber: 32,
-                                                    columnNumber: 29
+                                                    columnNumber: 57
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
@@ -73248,14 +73255,17 @@ const WelcomeView = ()=>{
                                                 columnNumber: 25
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                style: {
+                                                    margin: "8.5px"
+                                                },
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                                     href: "#services-section",
                                                     className: "nav-link",
-                                                    children: "Services"
+                                                    children: "About Me"
                                                 }, void 0, false, {
                                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
                                                     lineNumber: 33,
-                                                    columnNumber: 29
+                                                    columnNumber: 57
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
@@ -73263,203 +73273,93 @@ const WelcomeView = ()=>{
                                                 columnNumber: 25
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                className: "has-children",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        href: "#about-section",
-                                                        className: "nav-link",
-                                                        children: "About Us"
-                                                    }, void 0, false, {
-                                                        fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                        lineNumber: 35,
-                                                        columnNumber: 28
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                                        className: "dropdown arrow-top",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                                    href: "#team-section",
-                                                                    className: "nav-link",
-                                                                    children: "Team"
-                                                                }, void 0, false, {
-                                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                    lineNumber: 37,
-                                                                    columnNumber: 35
-                                                                }, undefined)
-                                                            }, void 0, false, {
-                                                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                lineNumber: 37,
-                                                                columnNumber: 31
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                                    href: "#pricing-section",
-                                                                    className: "nav-link",
-                                                                    children: "Pricing"
-                                                                }, void 0, false, {
-                                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                    lineNumber: 38,
-                                                                    columnNumber: 35
-                                                                }, undefined)
-                                                            }, void 0, false, {
-                                                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                lineNumber: 38,
-                                                                columnNumber: 31
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                                    href: "#faq-section",
-                                                                    className: "nav-link",
-                                                                    children: "FAQ"
-                                                                }, void 0, false, {
-                                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                    lineNumber: 39,
-                                                                    columnNumber: 35
-                                                                }, undefined)
-                                                            }, void 0, false, {
-                                                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                lineNumber: 39,
-                                                                columnNumber: 31
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                className: "has-children",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                                        href: "#",
-                                                                        children: "More Links"
-                                                                    }, void 0, false, {
-                                                                        fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                        lineNumber: 41,
-                                                                        columnNumber: 34
-                                                                    }, undefined),
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                                                        className: "dropdown",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                                                    href: "#",
-                                                                                    children: "Menu One"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                                    lineNumber: 43,
-                                                                                    columnNumber: 41
-                                                                                }, undefined)
-                                                                            }, void 0, false, {
-                                                                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                                lineNumber: 43,
-                                                                                columnNumber: 37
-                                                                            }, undefined),
-                                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                                                    href: "#",
-                                                                                    children: "Menu Two"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                                    lineNumber: 44,
-                                                                                    columnNumber: 41
-                                                                                }, undefined)
-                                                                            }, void 0, false, {
-                                                                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                                lineNumber: 44,
-                                                                                columnNumber: 37
-                                                                            }, undefined),
-                                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                                                    href: "#",
-                                                                                    children: "Menu Three"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                                    lineNumber: 45,
-                                                                                    columnNumber: 41
-                                                                                }, undefined)
-                                                                            }, void 0, false, {
-                                                                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                                lineNumber: 45,
-                                                                                columnNumber: 37
-                                                                            }, undefined)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                        lineNumber: 42,
-                                                                        columnNumber: 34
-                                                                    }, undefined)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                                lineNumber: 40,
-                                                                columnNumber: 31
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                        lineNumber: 36,
-                                                        columnNumber: 28
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
+                                                style: {
+                                                    margin: "8.5px"
+                                                },
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "#why-us-section",
+                                                    className: "nav-link",
+                                                    children: "YouTube"
+                                                }, void 0, false, {
+                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
+                                                    lineNumber: 34,
+                                                    columnNumber: 57
+                                                }, undefined)
+                                            }, void 0, false, {
                                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
                                                 lineNumber: 34,
                                                 columnNumber: 25
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: "#why-us-section",
-                                                    className: "nav-link",
-                                                    children: "Why Us"
-                                                }, void 0, false, {
-                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                    lineNumber: 50,
-                                                    columnNumber: 29
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                lineNumber: 50,
-                                                columnNumber: 25
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                style: {
+                                                    margin: "8.5px"
+                                                },
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                                     href: "#testimonials-section",
                                                     className: "nav-link",
-                                                    children: "Testimonials"
+                                                    children: "Spotify"
                                                 }, void 0, false, {
                                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                    lineNumber: 51,
-                                                    columnNumber: 29
+                                                    lineNumber: 35,
+                                                    columnNumber: 57
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                lineNumber: 51,
+                                                lineNumber: 35,
                                                 columnNumber: 25
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                style: {
+                                                    margin: "8.5px"
+                                                },
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                                     href: "#blog-section",
                                                     className: "nav-link",
-                                                    children: "Blog"
+                                                    children: "Podcast"
                                                 }, void 0, false, {
                                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                    lineNumber: 52,
-                                                    columnNumber: 29
+                                                    lineNumber: 36,
+                                                    columnNumber: 57
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                lineNumber: 52,
+                                                lineNumber: 36,
                                                 columnNumber: 25
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                style: {
+                                                    margin: "8.5px"
+                                                },
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                                     href: "#contact-section",
                                                     className: "nav-link",
-                                                    children: "Contact"
+                                                    children: "Merch"
                                                 }, void 0, false, {
                                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                    lineNumber: 53,
-                                                    columnNumber: 29
+                                                    lineNumber: 37,
+                                                    columnNumber: 57
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                lineNumber: 53,
+                                                lineNumber: 37,
+                                                columnNumber: 25
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                style: {
+                                                    margin: "8.5px"
+                                                },
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "#contact-section",
+                                                    className: "nav-link",
+                                                    children: "Important Causes"
+                                                }, void 0, false, {
+                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
+                                                    lineNumber: 38,
+                                                    columnNumber: 57
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
+                                                lineNumber: 38,
                                                 columnNumber: 25
                                             }, undefined)
                                         ]
@@ -73487,17 +73387,17 @@ const WelcomeView = ()=>{
                                         className: "icon-menu h3"
                                     }, void 0, false, {
                                         fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                        lineNumber: 57,
+                                        lineNumber: 58,
                                         columnNumber: 144
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                    lineNumber: 57,
+                                    lineNumber: 58,
                                     columnNumber: 72
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 57,
+                                lineNumber: 58,
                                 columnNumber: 16
                             }, undefined)
                         ]
@@ -73523,7 +73423,7 @@ const WelcomeView = ()=>{
                 }
             }, void 0, false, {
                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                lineNumber: 61,
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined)
         ]
