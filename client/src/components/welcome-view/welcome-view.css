@@ -37,8 +37,8 @@ body {
 .contact-info a {
   color: white;
   font-size: 18px;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: 150px;
+  margin-left: 150px;
   text-decoration: none;
   display: block;
 }
@@ -55,22 +55,11 @@ body {
 .social-media a:hover {
   color: #ddd;
 }
-.content-all a {
-  color: white;
-  font-size: 18px;
-  margin-right: 100px;
-  margin-left: 100px;
-  text-decoration: none;
-  display: block;
-}
-.content-all a:hover {
-  color: #ddd;
-}
 .causes a {
   color: white;
   font-size: 18px;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: 150px;
+  margin-left: 150px;
   text-decoration: none;
   display: block;
 }

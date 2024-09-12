@@ -73279,8 +73279,8 @@ const WelcomeView = ()=>{
                                                     margin: "15px"
                                                 },
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                                    to: `/youtube`,
-                                                    children: "Youtube"
+                                                    to: `/merch`,
+                                                    children: "Merch"
                                                 }, void 0, false, {
                                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
                                                     lineNumber: 37,
@@ -73291,40 +73291,78 @@ const WelcomeView = ()=>{
                                                 lineNumber: 37,
                                                 columnNumber: 25
                                             }, undefined),
-                                            "   ",
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                 style: {
                                                     margin: "15px"
                                                 },
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                                    to: `/podcast`,
-                                                    children: "Podcast"
-                                                }, void 0, false, {
-                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                    lineNumber: 38,
-                                                    columnNumber: 56
-                                                }, undefined)
-                                            }, void 0, false, {
+                                                className: "has-children",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        className: "nav-link",
+                                                        children: "Content"
+                                                    }, void 0, false, {
+                                                        fileName: "client/src/components/welcome-view/welcome-view.jsx",
+                                                        lineNumber: 39,
+                                                        columnNumber: 28
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                        className: "dropdown arrow-top",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                    href: "https://www.youtube.com/",
+                                                                    className: "nav-link",
+                                                                    children: "YouTube Channel"
+                                                                }, void 0, false, {
+                                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
+                                                                    lineNumber: 41,
+                                                                    columnNumber: 35
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
+                                                                lineNumber: 41,
+                                                                columnNumber: 31
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                    href: "https://riverside.fm/dashboard/studios/edenures-studio/recordings/6db28fc0-fcde-44fa-b596-f860516221ae?share-token=556dd2615fa0fa8c3cf8",
+                                                                    className: "nav-link",
+                                                                    children: "Podcast"
+                                                                }, void 0, false, {
+                                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
+                                                                    lineNumber: 42,
+                                                                    columnNumber: 35
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
+                                                                lineNumber: 42,
+                                                                columnNumber: 31
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                    href: "https://open.spotify.com/",
+                                                                    className: "nav-link",
+                                                                    children: "Band"
+                                                                }, void 0, false, {
+                                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
+                                                                    lineNumber: 43,
+                                                                    columnNumber: 35
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
+                                                                lineNumber: 43,
+                                                                columnNumber: 31
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "client/src/components/welcome-view/welcome-view.jsx",
+                                                        lineNumber: 40,
+                                                        columnNumber: 28
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
                                                 lineNumber: 38,
-                                                columnNumber: 25
-                                            }, undefined),
-                                            "   ",
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                style: {
-                                                    margin: "15px"
-                                                },
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                                    to: `/merch`,
-                                                    children: "Merch"
-                                                }, void 0, false, {
-                                                    fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                    lineNumber: 39,
-                                                    columnNumber: 56
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                                lineNumber: 39,
                                                 columnNumber: 25
                                             }, undefined)
                                         ]
@@ -73352,17 +73390,17 @@ const WelcomeView = ()=>{
                                         className: "icon-menu h3"
                                     }, void 0, false, {
                                         fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                        lineNumber: 59,
+                                        lineNumber: 57,
                                         columnNumber: 144
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                    lineNumber: 59,
+                                    lineNumber: 57,
                                     columnNumber: 72
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 59,
+                                lineNumber: 57,
                                 columnNumber: 16
                             }, undefined)
                         ]
@@ -73391,7 +73429,7 @@ const WelcomeView = ()=>{
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 65,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -73400,7 +73438,7 @@ const WelcomeView = ()=>{
                                 children: "*Mailing Address*"
                             }, void 0, false, {
                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 66,
+                                lineNumber: 64,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -73409,13 +73447,13 @@ const WelcomeView = ()=>{
                                 children: "608-669-1379"
                             }, void 0, false, {
                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 67,
+                                lineNumber: 65,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                        lineNumber: 64,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -73425,7 +73463,7 @@ const WelcomeView = ()=>{
                                 children: "Social Media"
                             }, void 0, false, {
                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 70,
+                                lineNumber: 68,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -73438,12 +73476,12 @@ const WelcomeView = ()=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                    lineNumber: 71,
+                                    lineNumber: 69,
                                     columnNumber: 72
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 71,
+                                lineNumber: 69,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -73456,12 +73494,12 @@ const WelcomeView = ()=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                    lineNumber: 72,
+                                    lineNumber: 70,
                                     columnNumber: 55
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 72,
+                                lineNumber: 70,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -73474,58 +73512,18 @@ const WelcomeView = ()=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                    lineNumber: 73,
+                                    lineNumber: 71,
                                     columnNumber: 88
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 73,
+                                lineNumber: 71,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                        lineNumber: 69,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "content-all",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                children: "Content"
-                            }, void 0, false, {
-                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 76,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "#",
-                                children: "YouTube"
-                            }, void 0, false, {
-                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 77,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "#",
-                                children: "Podcast"
-                            }, void 0, false, {
-                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 78,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "#",
-                                children: "Band"
-                            }, void 0, false, {
-                                fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 79,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                        lineNumber: 75,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -73535,7 +73533,7 @@ const WelcomeView = ()=>{
                                 children: "Important Causes"
                             }, void 0, false, {
                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 82,
+                                lineNumber: 74,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -73544,7 +73542,7 @@ const WelcomeView = ()=>{
                                 children: "Safe Bar Network"
                             }, void 0, false, {
                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 83,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -73552,7 +73550,7 @@ const WelcomeView = ()=>{
                                 children: "Rural Mental Health"
                             }, void 0, false, {
                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 84,
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -73560,19 +73558,19 @@ const WelcomeView = ()=>{
                                 children: "Kids Mental Health"
                             }, void 0, false, {
                                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                                lineNumber: 85,
+                                lineNumber: 77,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                        lineNumber: 81,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                lineNumber: 63,
+                lineNumber: 61,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -73582,7 +73580,7 @@ const WelcomeView = ()=>{
                 }
             }, void 0, false, {
                 fileName: "client/src/components/welcome-view/welcome-view.jsx",
-                lineNumber: 88,
+                lineNumber: 80,
                 columnNumber: 7
             }, undefined)
         ]

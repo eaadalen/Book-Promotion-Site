@@ -34,25 +34,23 @@ export const WelcomeView = () => {
                      <ul className="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                         <li style={{ margin: '15px' }}><Link to={`/book`}>Book</Link></li>
                         <li style={{ margin: '15px' }}><Link to={`/about`}>About Me</Link></li>
-                        <li style={{ margin: '15px' }}><Link to={`/youtube`}>Youtube</Link></li>   {/* Youtube link to be inserted later */}
-                        <li style={{ margin: '15px' }}><Link to={`/podcast`}>Podcast</Link></li>   {/* Podcast link to be inserted later */}
                         <li style={{ margin: '15px' }}><Link to={`/merch`}>Merch</Link></li>
-                        {/* <li className="has-children">
-                           <a href="#about-section" className="nav-link">About Us</a>
+                        <li style={{ margin: '15px' }} className="has-children">
+                           <a className="nav-link">Content</a>
                            <ul className="dropdown arrow-top">
-                              <li><a href="#team-section" className="nav-link">Team</a></li>
-                              <li><a href="#pricing-section" className="nav-link">Pricing</a></li>
-                              <li><a href="#faq-section" className="nav-link">FAQ</a></li>
-                              <li className="has-children">
+                              <li><a href="https://www.youtube.com/" className="nav-link">YouTube Channel</a></li>
+                              <li><a href="https://riverside.fm/dashboard/studios/edenures-studio/recordings/6db28fc0-fcde-44fa-b596-f860516221ae?share-token=556dd2615fa0fa8c3cf8" className="nav-link">Podcast</a></li>
+                              <li><a href="https://open.spotify.com/" className="nav-link">Band</a></li>
+                              {/* <li className="has-children">
                                  <a href="#">More Links</a>
                                  <ul className="dropdown">
                                     <li><a href="#">Menu One</a></li>
                                     <li><a href="#">Menu Two</a></li>
                                     <li><a href="#">Menu Three</a></li>
                                  </ul>
-                              </li>
+                              </li>*/}
                            </ul>
-                        </li>*/}
+                        </li>
                      </ul>
                   </nav>
                </div>
@@ -71,12 +69,6 @@ export const WelcomeView = () => {
           <a href="https://www.instagram.com/emmyann5/" target="blank"><img src={insta_logo} style={{ height: '35px' }}></img></a>
           <a href="https://x.com/home" target="blank"><img src={x_logo} style={{ height: '30px' }}></img></a>
           <a href="https://www.linkedin.com/in/emily-denure-6aa710327/" target="blank"><img src={linkedin_logo} style={{ height: '35px' }}></img></a>
-        </div>
-        <div class="content-all">
-          <h3>Content</h3>
-          <a href="#">YouTube</a>
-          <a href="#">Podcast</a>
-          <a href="#">Band</a>
         </div>
         <div class="causes">
           <h3>Important Causes</h3>
