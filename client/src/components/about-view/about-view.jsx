@@ -20,23 +20,20 @@ export const AboutView = () => {
          </div>
          <div className="bio">
             <p>
-            Suspendisse tellus tellus, ultricies sit amet nulla non, vehicula semper enim. Nulla malesuada, 
-            tellus vitae dapibus vulputate, mi sem viverra arcu, eget finibus purus libero sit amet nulla. 
-            Mauris ultrices ullamcorper libero vel aliquet. Cras vel lorem justo. Donec blandit, justo sit 
-            amet mattis cursus, leo quam finibus elit, nec iaculis lorem enim vitae massa. Praesent a erat 
-            eget ex congue tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
-            cubilia curae; Vivamus vitae accumsan elit. Ut semper purus quis elit sagittis, vitae sollicitudin 
-            sem sollicitudin. Sed sit amet arcu viverra, hendrerit ex in, commodo erat. Aenean ultrices ut 
-            massa ut rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-            mus. Pellentesque metus lacus, suscipit ac urna mattis, consectetur aliquam nisi. Orci varius 
-            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum 
-            primis in faucibus orci luctus et ultrices posuere cubilia curae; In vitae gravida nibh, sed 
-            viverra ex.
+              Emily DeNure is a speech-language pathologist working in low-income public schools and author of the memoir, 
+              “The Story of Us”. DeNure applied the knowledge and experience within her academic and professional career 
+              to her personal life in order to develop personally, confronting generational trauma and mental health 
+              challenges. With her history of helping others, she often neglected to look inward towards self-actualization 
+              and improvement. She was left with no choice but to embark on a healing journey in the start of her late 
+              twenties. DeNure showcases the benefits of putting in the work. Her positivity shines through within her work 
+              and writing in order to motivate others to take control of their life path and forgive themselves and others 
+              for the missteps along the way. She shares her gift of feeling with the world through her writing. DeNure is 
+              a self-published Indie author, with complete control over her narrative. By sharing her honest truth with the 
+              world through her first publication, she hopes to open an avenue for others to share their own story of resilience.
             </p>
          </div>
       </div>
       <Footer/>
-      <div className="hero" style={{ backgroundColor: 'white' }}></div>
     </>
   )
 }

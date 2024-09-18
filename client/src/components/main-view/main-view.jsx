@@ -9,8 +9,8 @@ export const MainView = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<BookView/>}/>
-        <Route path="/about" element={<AboutView/>}/>
+        <Route path="/" element={<AboutView/>}/>
+        <Route path="/book" element={<BookView/>}/>
         <Route path="/merch" element={<MerchView/>}/>
         <Route path="/submitstory" element={<SubmitStoryView/>}/>
       </Routes>

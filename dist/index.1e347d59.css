@@ -16159,33 +16159,6 @@ a, a:hover {
   content: "";
 }
 
-.description {
-  width: 40%;
-  margin-left: 10%;
-}
-
-.footer {
-  color: #c65363;
-  background-color: #d3ac8b;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
-
-.bio {
-  width: 40%;
-  margin-left: 10%;
-}
-
-.book_pic {
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  margin-right: 10%;
-  display: flex;
-}
-
 .footer {
   color: #c65363;
   text-align: center;
@@ -16273,6 +16246,40 @@ h3 {
   display: flex;
 }
 
+.description {
+  width: 42%;
+  margin-left: 8%;
+}
+
+.reflections {
+  width: 50%;
+  margin-left: 8%;
+}
+
+.book_pic {
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-right: 10%;
+  display: flex;
+}
+
+.site-navbar {
+  z-index: 1000;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px #0000001a;
+}
+
+.side-by-side {
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 175px;
+  display: flex;
+}
+
 .bio {
   width: 40%;
   margin-right: 10%;
@@ -16289,11 +16296,14 @@ h3 {
 html {
   touch-action: manipulation;
   height: 100%;
-  top: -3px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
   overflow: auto;
 }
 /*# sourceMappingURL=index.1e347d59.css.map */

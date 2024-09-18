@@ -32,7 +32,6 @@ export const SubmitStoryView = () => {
         </form>
       </div>
       <Footer/>
-      <div className="hero" style={{ backgroundColor: 'white' }}></div>
     </>
   )
 }

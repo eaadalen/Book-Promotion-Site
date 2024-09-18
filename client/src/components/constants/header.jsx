@@ -12,14 +12,6 @@ import { Link } from "react-router-dom";
 export default Header = () => {
   return (
     <>
-      <div className="site-mobile-menu site-navbar-target">
-         <div className="site-mobile-menu-header">
-            <div className="site-mobile-menu-close mt-3">
-               <span className="icon-close2 js-menu-toggle"></span>
-            </div>
-         </div>
-         <div className="site-mobile-menu-body"></div>
-      </div>
       <header className="site-navbar js-sticky-header site-navbar-target" role="banner">
          <div className="container">
             <div className="row align-items-center position-relative">
@@ -29,11 +21,11 @@ export default Header = () => {
                <div className="col-12">
                   <nav className="site-navigation text-right ml-auto" role="navigation">
                      <ul className="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                        <li style={{ margin: '15px' }}><Link to={`/`}>Book</Link></li>
-                        <li style={{ margin: '15px' }}><Link to={`/about`}>About Me</Link></li>
-                        <li style={{ margin: '15px' }}><Link to={`/merch`}>Merch</Link></li>
-                        <li style={{ margin: '15px' }}><Link to={`/submitstory`}>Share Your Story</Link></li>
-                        <li style={{ margin: '15px' }} className="has-children">
+                        <li style={{ marginLeft: '15px', marginRight: '15px' }}><Link to={`/`}>About Me</Link></li>
+                        <li style={{ marginLeft: '15px', marginRight: '15px' }}><Link to={`/book`}>Memoir</Link></li>
+                        <li style={{ marginLeft: '15px', marginRight: '15px' }}><Link to={`/merch`}>Merch</Link></li>
+                        <li style={{ marginLeft: '15px', marginRight: '15px' }}><Link to={`/submitstory`}>Share Your Story</Link></li>
+                        <li style={{ marginLeft: '15px', marginRight: '15px' }} className="has-children">
                            <a className="nav-link">Content</a>
                            <ul className="dropdown arrow-top">
                               <li><a href="https://www.youtube.com/" className="nav-link" target="blank">YouTube Channel</a></li>
@@ -44,7 +36,6 @@ export default Header = () => {
                      </ul>
                   </nav>
                </div>
-               <div className="toggle-button d-inline-block d-lg-none"><a href="#" className="site-menu-toggle py-5 js-menu-toggle text-black"><span className="icon-menu h3"></span></a></div>
             </div>
          </div>
       </header>

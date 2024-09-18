@@ -1,4 +1,3 @@
-require('dotenv').config()
 import { createRoot } from "react-dom/client";
 import { MainView } from "./components/main-view/main-view";
 import "./index.css";
@@ -6,7 +5,7 @@ import "./index.css";
 const App = () => {
   return (
     <div>
-      <MainView />
+      <MainView/>
     </div>
   );
 };

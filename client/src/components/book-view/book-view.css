@@ -75,8 +75,12 @@ h3 {
   align-items: center;
 }
 .description {
-  width: 40%;
-  margin-left: 10%;
+  width: 42%;
+  margin-left: 8%;
+}
+.reflections {
+  width: 50%;
+  margin-left: 8%;
 }
 .book_pic {
   width: 30%;

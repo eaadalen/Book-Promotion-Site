@@ -1,3 +1,5 @@
 -make responsive design. Have different layout for mobile vs desktop
 -fill out all footer links
 -make footer smaller
+-make header smaller
+-add gallery tab

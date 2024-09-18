@@ -14,7 +14,6 @@ export const MerchView = () => {
     <>
       <Header/>
       <Footer/>
-      <div className="hero" style={{ backgroundColor: 'white' }}></div>
     </>
   )
 }
