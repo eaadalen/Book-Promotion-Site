@@ -16159,6 +16159,19 @@ a, a:hover {
   content: "";
 }
 
+.bio {
+  width: 40%;
+  margin-left: 10%;
+}
+
+.book_pic {
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-right: 10%;
+  display: flex;
+}
+
 .footer {
   color: #c65363;
   text-align: center;
@@ -16238,6 +16251,25 @@ body {
 
 h3 {
   margin-bottom: 12px;
+}
+
+.side-by-side {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.bio {
+  width: 40%;
+  margin-right: 10%;
+}
+
+.profile_pic {
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-left: 10%;
+  display: flex;
 }
 
 html {

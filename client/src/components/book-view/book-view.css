@@ -69,3 +69,19 @@ body {
 h3 {
   margin-bottom: 12px;
 }
+.side-by-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bio {
+  width: 40%;
+  margin-left: 10%;
+}
+.book_pic {
+  width: 30%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
