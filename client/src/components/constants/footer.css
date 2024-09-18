@@ -76,11 +76,11 @@ h3 {
 }
 .bio {
   width: 40%;
-  margin-right: 10%;
-}
-.profile_pic {
-  width: 30%;
   margin-left: 10%;
+}
+.book_pic {
+  width: 30%;
+  margin-right: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
