@@ -1,4 +1,3 @@
 -make responsive design. Have different layout for mobile vs desktop
 -fill out all footer links
--share your story form
 -make footer smaller
