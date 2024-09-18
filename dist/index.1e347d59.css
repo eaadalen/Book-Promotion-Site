@@ -16159,6 +16159,11 @@ a, a:hover {
   content: "";
 }
 
+.description {
+  width: 40%;
+  margin-left: 10%;
+}
+
 .bio {
   width: 40%;
   margin-left: 10%;

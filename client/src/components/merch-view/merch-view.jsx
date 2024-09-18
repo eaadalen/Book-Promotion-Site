@@ -13,8 +13,6 @@ export const MerchView = () => {
   return (
     <>
       <Header/>
-      <body>
-      </body>
       <Footer/>
       <div className="hero" style={{ backgroundColor: 'white' }}></div>
     </>

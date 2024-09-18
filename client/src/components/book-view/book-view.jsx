@@ -14,29 +14,30 @@ export const BookView = () => {
   return (
     <>
       <Header/>
-      <body>
-         <div class="side-by-side">
-            <div class="bio">
-               <p>
-               Suspendisse tellus tellus, ultricies sit amet nulla non, vehicula semper enim. Nulla malesuada, 
-               tellus vitae dapibus vulputate, mi sem viverra arcu, eget finibus purus libero sit amet nulla. 
-               Mauris ultrices ullamcorper libero vel aliquet. Cras vel lorem justo. Donec blandit, justo sit 
-               amet mattis cursus, leo quam finibus elit, nec iaculis lorem enim vitae massa. Praesent a erat 
-               eget ex congue tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
-               cubilia curae; Vivamus vitae accumsan elit. Ut semper purus quis elit sagittis, vitae sollicitudin 
-               sem sollicitudin. Sed sit amet arcu viverra, hendrerit ex in, commodo erat. Aenean ultrices ut 
-               massa ut rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-               mus. Pellentesque metus lacus, suscipit ac urna mattis, consectetur aliquam nisi. Orci varius 
-               natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum 
-               primis in faucibus orci luctus et ultrices posuere cubilia curae; In vitae gravida nibh, sed 
-               viverra ex.
-               </p>
-            </div>
-            <div class="book_pic">
-               <img src={book_pic} alt="Image description"></img>
-            </div>
+      <div className="side-by-side">
+         <div className="description">
+            <p>
+            Suspendisse tellus tellus, ultricies sit amet nulla non, vehicula semper enim. Nulla malesuada, 
+            tellus vitae dapibus vulputate, mi sem viverra arcu, eget finibus purus libero sit amet nulla. 
+            Mauris ultrices ullamcorper libero vel aliquet. Cras vel lorem justo. Donec blandit, justo sit 
+            amet mattis cursus, leo quam finibus elit, nec iaculis lorem enim vitae massa. Praesent a erat 
+            eget ex congue tempor. 
+            </p>
+            <iframe 
+              style={{ borderRadius: '12px', padding: '20px' }}
+              src="https://open.spotify.com/embed/playlist/2cfedvKmWwa0pe1ylMZBsF?utm_source=generator" 
+              width="95%" 
+              height="200px" 
+              frameBorder="0" 
+              allowFullScreen="" 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy">
+            </iframe>
          </div>
-      </body>
+         <div className="book_pic">
+            <img src={book_pic} alt="Image description"></img>
+         </div>
+      </div>
       <Footer/>
       <div className="hero" style={{ backgroundColor: 'white' }}></div>
     </>
