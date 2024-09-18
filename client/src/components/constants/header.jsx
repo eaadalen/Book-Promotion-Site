@@ -32,6 +32,7 @@ export default Header = () => {
                         <li style={{ margin: '15px' }}><Link to={`/`}>Book</Link></li>
                         <li style={{ margin: '15px' }}><Link to={`/about`}>About Me</Link></li>
                         <li style={{ margin: '15px' }}><Link to={`/merch`}>Merch</Link></li>
+                        <li style={{ margin: '15px' }}><Link to={`/submitstory`}>Share Your Story</Link></li>
                         <li style={{ margin: '15px' }} className="has-children">
                            <a className="nav-link">Content</a>
                            <ul className="dropdown arrow-top">

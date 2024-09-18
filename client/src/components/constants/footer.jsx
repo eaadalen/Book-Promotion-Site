@@ -28,7 +28,6 @@ export default Footer = () => {
         <div className="causes">
           <h3>Important Causes</h3>
           <a href="https://www.safebarnetwork.org/donatenow" target="blank">Safe Bar Network</a>
-          <a href="#">Rural Mental Health</a>
           <a href="#">Kids Mental Health</a>
         </div>
       </div>
