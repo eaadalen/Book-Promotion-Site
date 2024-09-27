@@ -1,87 +1,74 @@
-$(function() {
+// main.js
+import $ from 'jquery';
+import browser from 'browser-detect';
+import breakpoints from 'breakpoints-js';
 
-  var siteSticky = function() {
-		$(".js-sticky-header").sticky({topSpacing:0});
-	};
-	siteSticky();
+export function initMain() {
+  var $window = $(window),
+      $body = $('body'),
+      $wrapper = $('#page-wrapper'),
+      $banner = $('#banner'),
+      $header = $('#header');
 
-	var siteMenuClone = function() {
+  // Breakpoints.
+  breakpoints({
+    xlarge:   [ '1281px',  '1680px' ],
+    large:    [ '981px',   '1280px' ],
+    medium:   [ '737px',   '980px'  ],
+    small:    [ '481px',   '736px'  ],
+    xsmall:   [ null,      '480px'  ]
+  });
 
-		$('.js-clone-nav').each(function() {
-			var $this = $(this);
-			$this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
-		});
+  // Play initial animations on page load.
+  $window.on('load', function() {
+    window.setTimeout(function() {
+      $body.removeClass('is-preload');
+    }, 100);
+  });
 
-
-		setTimeout(function() {
-			
-			var counter = 0;
-      $('.site-mobile-menu .has-children').each(function(){
-        var $this = $(this);
-        
-        $this.prepend('<span class="arrow-collapse collapsed">');
-
-        $this.find('.arrow-collapse').attr({
-          'data-toggle' : 'collapse',
-          'data-target' : '#collapseItem' + counter,
-        });
-
-        $this.find('> ul').attr({
-          'class' : 'collapse',
-          'id' : 'collapseItem' + counter,
-        });
-
-        counter++;
-
-      });
-
-    }, 1000);
-
-		$('body').on('click', '.arrow-collapse', function(e) {
-      var $this = $(this);
-      if ( $this.closest('li').find('.collapse').hasClass('show') ) {
-        $this.removeClass('active');
-      } else {
-        $this.addClass('active');
-      }
-      e.preventDefault();  
-      
+  // Mobile?
+  if (browser.mobile) {
+    $body.addClass('is-mobile');
+  } else {
+    breakpoints.on('>medium', function() {
+      $body.removeClass('is-mobile');
     });
 
-		$(window).resize(function() {
-			var $this = $(this),
-				w = $this.width();
+    breakpoints.on('<=medium', function() {
+      $body.addClass('is-mobile');
+    });
+  }
 
-			if ( w > 768 ) {
-				if ( $('body').hasClass('offcanvas-menu') ) {
-					$('body').removeClass('offcanvas-menu');
-				}
-			}
-		})
+  // Scrolly.
+  $('.scrolly').scrolly({
+    speed: 1500,
+    offset: $header.outerHeight()
+  });
 
-		$('body').on('click', '.js-menu-toggle', function(e) {
-			var $this = $(this);
-			e.preventDefault();
+  // Menu.
+  $('#menu')
+    .append('<a href="#menu" class="close"></a>')
+    .appendTo($body)
+    .panel({
+      delay: 500,
+      hideOnClick: true,
+      hideOnSwipe: true,
+      resetScroll: true,
+      resetForms: true,
+      side: 'right',
+      target: $body,
+      visibleClass: 'is-menu-visible'
+    });
 
-			if ( $('body').hasClass('offcanvas-menu') ) {
-				$('body').removeClass('offcanvas-menu');
-				$this.removeClass('active');
-			} else {
-				$('body').addClass('offcanvas-menu');
-				$this.addClass('active');
-			}
-		}) 
+  // Header.
+  if ($banner.length > 0 && $header.hasClass('alt')) {
+    $window.on('resize', function() { $window.trigger('scroll'); });
 
-		// click outisde offcanvas
-		$(document).mouseup(function(e) {
-	    var container = $(".site-mobile-menu");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	      if ( $('body').hasClass('offcanvas-menu') ) {
-					$('body').removeClass('offcanvas-menu');
-				}
-	    }
-		});
-	}; 
-	siteMenuClone();
-
-});
+    $banner.scrollex({
+      bottom: $header.outerHeight() + 1,
+      terminate: function() { $header.removeClass('alt'); },
+      enter: function() { $header.addClass('alt'); },
+      leave: function() { $header.removeClass('alt'); }
+    });
+  }
+}
