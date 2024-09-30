@@ -1,5 +1,3 @@
-import jQuery from 'jquery';
-
 (function($) {
 
 	/**
@@ -586,14 +584,4 @@ import jQuery from 'jquery';
 
 	};
 
-	$.fn.initializeAll = function() {
-    this.navList(); // Call navList
-    this.panel({ /* your config */ }); // Call panel
-    this.placeholder(); // Call placeholder
-    this.prioritize(); // Call prioritize
-    return this; // Return the jQuery object for chaining
-  };
-
 })(jQuery);
-
-export default jQuery;
