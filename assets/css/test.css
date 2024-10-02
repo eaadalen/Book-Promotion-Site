@@ -1,0 +1,55 @@
+/* Basic styling for the navbar */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-right: 40px;
+  position: relative; /* Important for dropdown positioning */
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.navbar-menu a:hover {
+  background-color: #444;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Places it right below the parent item */
+  left: 0;
+  background-color: #333;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 150px; /* You can adjust the width */
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+  display: block;
+  color: white;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #444;
+}
