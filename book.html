@@ -78,24 +78,19 @@
 
                   <h3>Cast Your Vote</h3>
                   <div class="poll-container">
-                     <div class="poll-title">Which Defensive Safety is your pick for the author?</div>
-                     <form id="pollForm">
-                         <div class="poll-option"><button name="vote">Adrian</button><input type="radio" name="vote" value="0">Adrian</div>
-                         <div class="poll-option"><input type="radio" name="vote" value="1">Reggie</div>
-                         <div class="poll-option"><input type="radio" name="vote" value="2">Landon</div>
-                         <div class="poll-option"><input type="radio" name="vote" value="3">Drew</div>
-                         <div class="poll-option"><input type="radio" name="vote" value="4">*Write In*</div>
-                         <button type="button" class="vote-btn" onclick="submitVote()">Vote</button>
-                     </form>
-                     <div id="results" style="display: none; margin-top: 20px;">
-                         <h3>Poll Results:</h3>
-                         <div class="result-bar"><div id="result0" class="result-fill" style="width: 0%;">0%</div></div>
-                         <div class="result-bar"><div id="result1" class="result-fill" style="width: 0%;">0%</div></div>
-                         <div class="result-bar"><div id="result2" class="result-fill" style="width: 0%;">0%</div></div>
-                         <div class="result-bar"><div id="result3" class="result-fill" style="width: 0%;">0%</div></div>
-                         <div class="result-bar"><div id="result4" class="result-fill" style="width: 0%;">0%</div></div>
-                     </div>
-                 </div>
+                     <div class="poll-title" style="display: flex; flex-direction: column; align-items: center;">Which Defensive Safety is your pick for the author?</div><br>
+                     <form id="pollForm" style="display: flex; flex-direction: column; align-items: center;">
+                        <button id="Adrian" class="poll-button" style="width: 100%;">Adrian</button>
+                        <button id="Reggie" style="width: 100%;">Reggie</button>
+                        <button id="Landon" style="width: 100%;">Landon</button>
+                        <button id="Drew" style="width: 100%;">Drew</button>
+                        <button id="Other" style="width: 100%;">Other</button>
+                      </form>
+                      
+                  </div>
+
+                  
+                   
 
                   <hr />
 
@@ -139,29 +134,147 @@
       <script src="assets/js/util.js"></script>
       <script src="assets/js/main.js"></script>
       <script>
-         const votes = [0, 0, 0, 0, 0];
-         let totalVotes = 0;
+         let total = 0
+         let adrian_fill = 0
+         let reggie_fill = 0
+         let landon_fill = 0
+         let drew_fill = 0
+         let other_fill = 0
+         let locked = false
  
-         function submitVote() {
-             const selectedOption = document.querySelector('button[name="vote"]:checked');
-             const voteIndex = parseInt(selectedOption.value);
-             votes[voteIndex]++;
-             totalVotes++;
- 
-             displayResults();
+         function displayResults(name) {
+            fetch("http://localhost:4242/voting", {
+               method: 'GET',
+               headers: {
+                  'Content-Type': 'application/json'
+               },
+            }).then(response => response.json())
+            .then(data => {
+               total = data.Adrian + data.Reggie + data.Landon + data.Drew + data.Other
+               adrian_fill = data.Adrian/total
+               reggie_fill = data.Reggie/total
+               landon_fill = data.Landon/total
+               drew_fill = data.Drew/total
+               other_fill = data.Other/total
+               locked = true
+               const buttons = [["Adrian", adrian_fill], ["Reggie", reggie_fill], ["Landon", landon_fill], ["Drew", drew_fill], ["Other", other_fill]]
+               buttons.forEach(name => {
+                  updateButtonBackground(name[0], name[1])
+               })
+            })
          }
- 
-         function displayResults() {
-             document.getElementById("pollForm").style.display = "none";
-             document.getElementById("results").style.display = "block";
- 
-             votes.forEach((count, index) => {
-                 const percentage = ((count / totalVotes) * 100).toFixed(1);
-                 const resultFill = document.getElementById(`result${index}`);
-                 resultFill.style.width = `${percentage}%`;
-                 resultFill.textContent = `${percentage}%`;
-             });
+
+         document.getElementById('Adrian').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the form from submitting and refreshing the page
+            if (locked == true) {
+               return
+            }
+            const data = {
+               name: 'Adrian'
+            };
+
+            fetch("http://localhost:4242/voting", {
+               method: 'POST',
+               headers: {
+                  'Content-Type': 'application/json', // specify the content type
+                  'Access-Control-Allow-Origin': '*'
+               },
+               body: JSON.stringify(data), // convert your data to a string format (usually JSON)
+            }).then(response => {
+               displayResults("Adrian")
+            })
+         });
+
+         document.getElementById('Reggie').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the form from submitting and refreshing the page
+            if (locked == true) {
+               return
+            }
+            const data = {
+               name: 'Reggie'
+            };
+
+            fetch("http://localhost:4242/voting", {
+               method: 'POST',
+               headers: {
+                  'Content-Type': 'application/json', // specify the content type
+                  'Access-Control-Allow-Origin': '*'
+               },
+               body: JSON.stringify(data), // convert your data to a string format (usually JSON)
+            }).then(response => {
+               displayResults("Reggie")
+            })
+         });
+
+         document.getElementById('Landon').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the form from submitting and refreshing the page
+            if (locked == true) {
+               return
+            }
+            const data = {
+               name: 'Landon'
+            };
+
+            fetch("http://localhost:4242/voting", {
+               method: 'POST',
+               headers: {
+                  'Content-Type': 'application/json', // specify the content type
+                  'Access-Control-Allow-Origin': '*'
+               },
+               body: JSON.stringify(data), // convert your data to a string format (usually JSON)
+            }).then(response => {
+               displayResults("Landon")
+            })
+         });
+
+         document.getElementById('Drew').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the form from submitting and refreshing the page
+            if (locked == true) {
+               return
+            }
+            const data = {
+               name: 'Drew'
+            };
+
+            fetch("http://localhost:4242/voting", {
+               method: 'POST',
+               headers: {
+                  'Content-Type': 'application/json', // specify the content type
+                  'Access-Control-Allow-Origin': '*'
+               },
+               body: JSON.stringify(data), // convert your data to a string format (usually JSON)
+            }).then(response => {
+               displayResults("Drew")
+            })
+         });
+
+         document.getElementById('Other').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the form from submitting and refreshing the page
+            if (locked == true) {
+               return
+            }
+            const data = {
+               name: 'Other'
+            };
+
+            fetch("http://localhost:4242/voting", {
+               method: 'POST',
+               headers: {
+                  'Content-Type': 'application/json', // specify the content type
+                  'Access-Control-Allow-Origin': '*'
+               },
+               body: JSON.stringify(data), // convert your data to a string format (usually JSON)
+            }).then(response => {
+               displayResults("Other")
+            })
+         });
+
+         function updateButtonBackground(name, fill) {
+            const button = document.getElementById(name);
+            const percentage = fill * 100;
+            button.style.background = `linear-gradient(to right, blue ${percentage}%, #ddd ${percentage}%)`;
          }
+
      </script>
    </body>
 </html>
