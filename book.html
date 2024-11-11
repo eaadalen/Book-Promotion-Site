@@ -63,12 +63,42 @@
                   <hr />
 
                   <h3>Reflections</h3>
-                  <p>Throughout this memoir the author often mentions safety. In what ways do the people in your life make you feel safe?</p>
-                  <p>The author references the symbolism of a cardinal and how she considered their appearance to be messages from Heaven. What is something in your life that you view as symbolizing a connection to something greater?</p>
-                  <p>We are all a product of our upbringing. In what ways has your life been shaped by your parents and generations before you? Which aspects of your upbringing have you stayed true to and which ones have you drifted from?</p>
-                  <p>Over the course of the author’s life thus far, society has shifted to help with the acceptance of the LGBTQ+ community. In what ways has society changed throughout your life to make you more confident about aspects of your own identity?</p>
-                  <p>Music is therapeutic and the author often connected her life to songs or lyrics. How has music helped you get through the trials and tribulations of life? Do you have a particular artist that has produced a soundtrack to your life? </p>
+                  <p>
+                     <span class="image right">
+                        <img src="images/SOU-pic.jpg" alt="" />
+                     </span>
+                     <p>Throughout this memoir the author often mentions safety. In what ways do the people in your life make you feel safe?</p>
+                     <p>The author references the symbolism of a cardinal and how she considered their appearance to be messages from Heaven. What is something in your life that you view as symbolizing a connection to something greater?</p>
+                     <p>We are all a product of our upbringing. In what ways has your life been shaped by your parents and generations before you? Which aspects of your upbringing have you stayed true to and which ones have you drifted from?</p>
+                     <p>Over the course of the author’s life thus far, society has shifted to help with the acceptance of the LGBTQ+ community. In what ways has society changed throughout your life to make you more confident about aspects of your own identity?</p>
+                     <p>Music is therapeutic and the author often connected her life to songs or lyrics. How has music helped you get through the trials and tribulations of life? Do you have a particular artist that has produced a soundtrack to your life? </p>
+                  </p>
+                  
                   <hr />
+
+                  <h3>Cast Your Vote</h3>
+                  <div class="poll-container">
+                     <div class="poll-title">Which Defensive Safety is your pick for the author?</div>
+                     <form id="pollForm">
+                         <div class="poll-option"><button name="vote">Adrian</button><input type="radio" name="vote" value="0">Adrian</div>
+                         <div class="poll-option"><input type="radio" name="vote" value="1">Reggie</div>
+                         <div class="poll-option"><input type="radio" name="vote" value="2">Landon</div>
+                         <div class="poll-option"><input type="radio" name="vote" value="3">Drew</div>
+                         <div class="poll-option"><input type="radio" name="vote" value="4">*Write In*</div>
+                         <button type="button" class="vote-btn" onclick="submitVote()">Vote</button>
+                     </form>
+                     <div id="results" style="display: none; margin-top: 20px;">
+                         <h3>Poll Results:</h3>
+                         <div class="result-bar"><div id="result0" class="result-fill" style="width: 0%;">0%</div></div>
+                         <div class="result-bar"><div id="result1" class="result-fill" style="width: 0%;">0%</div></div>
+                         <div class="result-bar"><div id="result2" class="result-fill" style="width: 0%;">0%</div></div>
+                         <div class="result-bar"><div id="result3" class="result-fill" style="width: 0%;">0%</div></div>
+                         <div class="result-bar"><div id="result4" class="result-fill" style="width: 0%;">0%</div></div>
+                     </div>
+                 </div>
+
+                  <hr />
+
                   <p>
                      <span class="image right">
                         <iframe 
@@ -108,5 +138,30 @@
       <script src="assets/js/breakpoints.min.js"></script>
       <script src="assets/js/util.js"></script>
       <script src="assets/js/main.js"></script>
+      <script>
+         const votes = [0, 0, 0, 0, 0];
+         let totalVotes = 0;
+ 
+         function submitVote() {
+             const selectedOption = document.querySelector('button[name="vote"]:checked');
+             const voteIndex = parseInt(selectedOption.value);
+             votes[voteIndex]++;
+             totalVotes++;
+ 
+             displayResults();
+         }
+ 
+         function displayResults() {
+             document.getElementById("pollForm").style.display = "none";
+             document.getElementById("results").style.display = "block";
+ 
+             votes.forEach((count, index) => {
+                 const percentage = ((count / totalVotes) * 100).toFixed(1);
+                 const resultFill = document.getElementById(`result${index}`);
+                 resultFill.style.width = `${percentage}%`;
+                 resultFill.textContent = `${percentage}%`;
+             });
+         }
+     </script>
    </body>
 </html>
